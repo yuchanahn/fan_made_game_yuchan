@@ -2,56 +2,83 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
+    #region Public Variables
+    [Tooltip("false = 이동 가능, true = 이동 불가")]
+    public bool hasBeenDragged = false;
+    #endregion
+
+    #region Private Variables
     private bool draggable;
-    private bool hasBeenDragged = false;
     private Camera mainCamera;
     private Vector2 originalPosition;
-    private Collider2D myCollider; // 콜라이더 추가
+    private Collider2D myCollider;
+    #endregion
 
     private void Awake()
     {
         mainCamera = Camera.main;
-        myCollider = GetComponent<Collider2D>(); // 콜라이더 참조
-    }
-
-    private void Start()
-    {
+        myCollider = GetComponent<Collider2D>();
         originalPosition = transform.position;
     }
 
     void Update()
     {
-        if (hasBeenDragged)
-            return;
+        if (ShouldIgnoreInput()) return;
 
+        ProcessInput();
+        DragObject();
+    }
+
+    private bool ShouldIgnoreInput()
+    {
+        return hasBeenDragged && !GameManager.Instance.canMove;
+    }
+
+    private void ProcessInput()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit2D hit = CastRay2D();
-
-            if (hit.transform == transform)
-            {
-                draggable = true;
-                myCollider.enabled = false; // 드래그 시작 시 콜라이더 비활성화
-            }
+            AttemptStartDrag();
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            if (draggable)
-            {
-                hasBeenDragged = true;
-                SnapToSlot();
-                myCollider.enabled = true; // 드래그 종료 시 콜라이더 활성화
-            }
-            draggable = false;
+            AttemptEndDrag();
+        }
+    }
+
+    private void AttemptStartDrag()
+    {
+        RaycastHit2D hit = CastRay2D();
+        if (hit.transform == transform)
+        {
+            draggable = true;
+            myCollider.enabled = false;
+        }
+    }
+
+    private void AttemptEndDrag()
+    {
+        if (!draggable) return;
+
+        if (GameManager.Instance.canMove && hasBeenDragged)
+        {
+            GameManager.Instance.canMoveCount--;
         }
 
-        if (draggable)
-        {
-            Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCamera.nearClipPlane);
-            Vector3 worldPosition = mainCamera.ScreenToWorldPoint(position);
-            transform.position = new Vector3(worldPosition.x, worldPosition.y, transform.position.z);
-        }
+        hasBeenDragged = true;
+        SnapToSlot();
+        myCollider.enabled = true;
+        draggable = false;
+    }
+
+    private void DragObject()
+    {
+        if (!draggable) return;
+
+        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCamera.nearClipPlane);
+        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
+        transform.position = new Vector3(worldPosition.x, worldPosition.y, transform.position.z);
     }
 
     private RaycastHit2D CastRay2D()
@@ -59,8 +86,7 @@ public class Draggable : MonoBehaviour
         Vector3 screenMousePos = Input.mousePosition;
         Vector2 worldMousePos = Camera.main.ScreenToWorldPoint(screenMousePos);
 
-        RaycastHit2D hit = Physics2D.Raycast(worldMousePos, Vector2.zero);
-        return hit;
+        return Physics2D.Raycast(worldMousePos, Vector2.zero);
     }
 
     private void SnapToSlot()

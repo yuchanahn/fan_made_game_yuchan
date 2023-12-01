@@ -6,10 +6,12 @@ public class Draggable : MonoBehaviour
     private bool hasBeenDragged = false;
     private Camera mainCamera;
     private Vector2 originalPosition;
+    private Collider2D myCollider; // 콜라이더 추가
 
     private void Awake()
     {
         mainCamera = Camera.main;
+        myCollider = GetComponent<Collider2D>(); // 콜라이더 참조
     }
 
     private void Start()
@@ -29,6 +31,7 @@ public class Draggable : MonoBehaviour
             if (hit.transform == transform)
             {
                 draggable = true;
+                myCollider.enabled = false; // 드래그 시작 시 콜라이더 비활성화
             }
         }
 
@@ -38,6 +41,7 @@ public class Draggable : MonoBehaviour
             {
                 hasBeenDragged = true;
                 SnapToSlot();
+                myCollider.enabled = true; // 드래그 종료 시 콜라이더 활성화
             }
             draggable = false;
         }
@@ -62,9 +66,8 @@ public class Draggable : MonoBehaviour
     private void SnapToSlot()
     {
         RaycastHit2D hit = CastRay2D();
-        if (hit.collider != null && hit.collider.CompareTag("Slot") && hit.collider.gameObject != gameObject)
+        if (hit.collider != null && hit.collider.CompareTag("Slot"))
         {
-            // 이동할 슬롯 위치로 오브젝트 위치 설정
             transform.position = hit.collider.transform.position;
         }
         else

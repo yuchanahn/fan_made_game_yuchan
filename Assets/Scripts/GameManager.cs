@@ -5,5 +5,8 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public int gold = 0;
+
     public int point = 0;
+
+    [HideInInspector] public SlotGenerator slotGenerator;
 }

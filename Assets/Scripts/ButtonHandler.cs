@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour
 {
     #region Public Variables
-    [Tooltip("배치할 프리팹")]
-    public GameObject[] objectPrefabs;
+    [Tooltip("스크립터블 오브젝트로부터 가져올 프리팹 데이터")]
+    public PrefabData prefabData;
     #endregion
 
     #region Private Variables
     private SlotGenerator slotGenerator;
-
     private Button button;
     #endregion
 
@@ -21,7 +18,6 @@ public class ButtonHandler : MonoBehaviour
         slotGenerator = GameManager.Instance.slotGenerator;
 
         button = GetComponent<Button>();
-
         if (button == null)
         {
             Debug.LogError("Button 컴포넌트가 이 게임 오브젝트에 없습니다.");
@@ -39,14 +35,11 @@ public class ButtonHandler : MonoBehaviour
             return;
         }
 
-        if (objectPrefabs.Length == 0)
+        GameObject selectedPrefab = prefabData.GetRandomPrefab();
+        if (selectedPrefab == null)
         {
-            Debug.LogError("배치할 프리팹이 설정되지 않았습니다.");
-            return;
+            return; // 에러 메시지는 GetRandomPrefab 메서드에서 출력됩니다.
         }
-
-        int randomIndex = Random.Range(0, objectPrefabs.Length);
-        GameObject selectedPrefab = objectPrefabs[randomIndex];
 
         slotGenerator.PlacePrefabInRandomSlot(selectedPrefab);
     }

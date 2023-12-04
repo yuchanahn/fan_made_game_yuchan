@@ -9,15 +9,21 @@ namespace Game.Database
     {
         NORMAL,
         RARE,
+        UNIQUE,
+        LEGENDARY,
+        IMMORTAL,
+        WAK,
+        ISEDOL,
+        HIDDEN,
     }
 
     [CreateAssetMenu(fileName = "UnitConfigData", menuName = "UnitConfigData")]
     public class UnitConfigData : DataContainerBase
     {
         [PageName("Unit_CSV")]
-        public List<UnitData> unitData;
+        public List<UnitData> Unit_CSV;
         [PageName("Unit_ToolTip_Info")]
-        public List<UnitSkillData> unitSkillData;
+        public List<UnitSkillData> Unit_ToolTip_Info;
     }
 
     [System.Serializable]
@@ -39,7 +45,8 @@ namespace Game.Database
         public EUNITGRADE unitGrade;
         public float attackRange;
 
-        [TextArea(10, 10)]
+        [TextArea(5, 5)]
         public string skillDescription;
+        public string skillLineDescription;
     }
 }

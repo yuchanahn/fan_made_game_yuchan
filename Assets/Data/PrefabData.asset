@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4733762eb9e6614ca8c1b87f58e63ab, type: 3}
   m_Name: PrefabData
   m_EditorClassIdentifier: 
-  prefabProbabilities: []
+  prefabProbabilities:
+  - prefab: {fileID: 1241975515779684433, guid: 2129e7da8b15d584c9d812e1f3ab72dd, type: 3}
+    probability: 1

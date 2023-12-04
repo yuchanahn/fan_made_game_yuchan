@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4733762eb9e6614ca8c1b87f58e63ab, type: 3}
-  m_Name: PrefabData
+  m_Script: {fileID: 11500000, guid: ddec4d94ff2d31f47ba2160419822717, type: 3}
+  m_Name: UnitConfigList
   m_EditorClassIdentifier: 
-  prefabProbabilities:
-  - prefab: {fileID: 0}
-    probability: 1
-  - prefab: {fileID: 0}
-    probability: 1
+  sheetId: 
+  gridId: 
+  units: []

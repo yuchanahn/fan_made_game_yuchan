@@ -36,12 +36,14 @@ namespace Game.Database
         public int attackLine;
         public int damage;
         public float attackSpeed;
+        public float projectileSpeed;
     }
 
     [System.Serializable]
     public class UnitSkillData
     {
         public string unitName;
+        public int unitID;
         public EUNITGRADE unitGrade;
         public float attackRange;
 

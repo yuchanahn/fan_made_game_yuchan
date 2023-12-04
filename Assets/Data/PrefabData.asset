@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PrefabData
   m_EditorClassIdentifier: 
   prefabProbabilities:
-  - prefab: {fileID: 1241975515779684433, guid: 2129e7da8b15d584c9d812e1f3ab72dd, type: 3}
+  - prefab: {fileID: 8600613448557096827, guid: ea3b408ee0e3f8a488c93a5bb806f65a, type: 3}
     probability: 1

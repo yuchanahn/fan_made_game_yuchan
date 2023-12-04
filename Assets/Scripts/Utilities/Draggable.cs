@@ -31,7 +31,7 @@ public class Draggable : MonoBehaviour
 
     private bool ShouldIgnoreInput()
     {
-        return hasBeenDragged && !GameManager.Instance.canMove;
+        return hasBeenDragged && !GameManager.Instance.canMove && GameManager.Instance.isGameStart;
     }
 
     private void ProcessInput()
@@ -66,7 +66,7 @@ public class Draggable : MonoBehaviour
             GameManager.Instance.canMoveCount--;
         }
 
-        hasBeenDragged = true;
+        //hasBeenDragged = true; // 기획 수정됨 라운드 전은 자유 이동
         SnapToSlot();
         myCollider.enabled = true;
         draggable = false;

@@ -19,6 +19,8 @@ public class GameManager : Singleton<GameManager>
 
     [HideInInspector] public bool canMove = false;
 
+    [HideInInspector] public bool isGameStart = false;
+
     [HideInInspector] public SlotGenerator slotGenerator;
     #endregion
 

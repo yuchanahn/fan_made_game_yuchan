@@ -15,20 +15,21 @@ public class Unit : MonoBehaviour
     private float attackSpeed;
     private float projectileSpeed;
 
-    public GameObject bulletPrefab; // ÃÑ¾Ë ÇÁ¸®ÆÕ
+    public GameObject bulletPrefab;
+
+    private float lastShootTime;
 
     private void Start()
     {
-        if (bulletPrefab != null)
-            StartCoroutine(ShootRoutine());
+        lastShootTime = Time.time;
     }
 
-    private IEnumerator ShootRoutine()
+    private void Update()
     {
-        while (true)
+        if (Time.time - lastShootTime >= attackSpeed)
         {
             Shoot();
-            yield return new WaitForSeconds(attackSpeed);
+            lastShootTime = Time.time;
         }
     }
 

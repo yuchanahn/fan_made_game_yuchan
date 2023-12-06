@@ -8,7 +8,7 @@ public class RoundInitializer : MonoBehaviour
 {
     [SerializeField] private RoundConfigData roundConfigData;
 
-    [SerializeField] private int currentRound = 0;
+    private int currentRound = 0;
 
     private RoundSettings roundSettings;
 
@@ -21,11 +21,16 @@ public class RoundInitializer : MonoBehaviour
 
         var data = roundConfigData.roundInfo.First(d => d.round == currentRound);
 
-        var roundData = roundConfigData.roundInfo
+        var roundMonsterData = roundConfigData.roundInfo
             .Where(d => d.round == currentRound)
             .Select(d => d.monsterId)
             .ToArray();
 
-        roundSettings.Initialize(data, roundData);
+        var roundSpawnNumData = roundConfigData.roundInfo
+            .Where (d => d.round == currentRound)
+            .Select(d => d.spawnNum)
+            .ToArray();
+
+        roundSettings.Initialize(data, roundMonsterData, roundSpawnNumData);
     }
 }

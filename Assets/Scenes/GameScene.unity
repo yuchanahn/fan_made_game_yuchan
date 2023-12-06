@@ -864,9 +864,12 @@ MonoBehaviour:
   point: 0
   canMoveCount: 0
   addMovePrice: 10
+  currentRound: 8
+  roundStartTrigger: 0
   canMove: 0
   isGameStart: 0
   slotGenerator: {fileID: 0}
+  roundSettings: {fileID: 0}
 --- !u!4 &1604284814
 Transform:
   m_ObjectHideFlags: 0
@@ -893,6 +896,8 @@ GameObject:
   - component: {fileID: 1755244245}
   - component: {fileID: 1755244246}
   - component: {fileID: 1755244247}
+  - component: {fileID: 1755244249}
+  - component: {fileID: 1755244248}
   m_Layer: 0
   m_Name: LaneGenerator
   m_TagString: Untagged
@@ -946,6 +951,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTransform: []
+--- !u!114 &1755244248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755244243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98458db977ff57e4f81630b94fd1e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundConfigData: {fileID: 11400000, guid: 5ddeb66aceb71254f9210451edb8248a, type: 2}
+--- !u!114 &1755244249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755244243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4fd93fb1570634883aded9f9251561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  round: 0
+  monsterId: 
+  spawnNum: 
+  spawnLaneNum: 0
+  boss: 0
+  bossLane: 0
 --- !u!1 &2050868418
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,11 +17,24 @@ public class GameManager : Singleton<GameManager>
     [Tooltip("유닛 이동 가능한 횟수를 늘리는 데 필요한 골드")]
     public int addMovePrice = 10;
 
-    [Tooltip("라운드 시작 트리거")]
-    private bool roundStartTrigger = false;
-
     [Header("라운드 세팅")]
     public int currentRound;
+
+    public int CurrentRound
+    {
+        get { return currentRound; }
+        set
+        {
+            if (value == currentRound + 1)
+            {
+                Debug.Log("다음 라운드로 넘어갑니다.");
+            }
+            currentRound = value;
+        }
+    }
+
+    [Tooltip("라운드 시작 트리거")]
+    public bool roundStartTrigger = false;
 
     public bool RoundStartTrigger
     {
@@ -41,6 +54,8 @@ public class GameManager : Singleton<GameManager>
     [HideInInspector] public bool isGameStart = false;
 
     [HideInInspector] public SlotGenerator slotGenerator;
+
+    [HideInInspector] public RoundSettings roundSettings;
     #endregion
 
     private void Update()

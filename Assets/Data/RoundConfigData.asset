@@ -12,5 +12,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43025ec8673355c47924aaedbc482682, type: 3}
   m_Name: RoundConfigData
   m_EditorClassIdentifier: 
-  documentID: 
-  roundInfo: []
+  documentID: 1Rw0urPEKUSgwSEdwpUq-qMUg8Eu3x75g
+  roundInfo:
+  - round: 1
+    monsterId: 1001
+    spawnNum: 2
+    spawnLaneNum: 1
+    boss: 0
+    bossLane: 0
+  - round: 2
+    monsterId: 1001
+    spawnNum: 4
+    spawnLaneNum: 1
+    boss: 0
+    bossLane: 0
+  - round: 3
+    monsterId: 1001
+    spawnNum: 6
+    spawnLaneNum: 2
+    boss: 0
+    bossLane: 0
+  - round: 4
+    monsterId: 1001
+    spawnNum: 6
+    spawnLaneNum: 2
+    boss: 0
+    bossLane: 0
+  - round: 5
+    monsterId: 1001
+    spawnNum: 8
+    spawnLaneNum: 3
+    boss: 0
+    bossLane: 0
+  - round: 6
+    monsterId: 1001
+    spawnNum: 10
+    spawnLaneNum: 3
+    boss: 0
+    bossLane: 0
+  - round: 7
+    monsterId: 1001
+    spawnNum: 10
+    spawnLaneNum: 4
+    boss: 0
+    bossLane: 0
+  - round: 8
+    monsterId: 1001
+    spawnNum: 0
+    spawnLaneNum: 2
+    boss: 0
+    bossLane: 0
+  - round: 8
+    monsterId: 1002
+    spawnNum: 0
+    spawnLaneNum: 0
+    boss: 0
+    bossLane: 0
+  - round: 9
+    monsterId: 1001
+    spawnNum: 8
+    spawnLaneNum: 4
+    boss: 0
+    bossLane: 0
+  - round: 9
+    monsterId: 1002
+    spawnNum: 4
+    spawnLaneNum: 0
+    boss: 0
+    bossLane: 0
+  - round: 10
+    monsterId: 1001
+    spawnNum: 4
+    spawnLaneNum: 2
+    boss: 1
+    bossLane: 5
+  - round: 10
+    monsterId: 1002
+    spawnNum: 4
+    spawnLaneNum: 0
+    boss: 0
+    bossLane: 0

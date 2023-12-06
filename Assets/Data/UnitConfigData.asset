@@ -17,7 +17,7 @@ MonoBehaviour:
   - unitName: "\uD32C\uCE58"
     unitID: 1001
     unitGrade: 0
-    attackRange: 3
+    attackRange: 1
     attackLine: 0
     damage: 10
     attackSpeed: 1.5

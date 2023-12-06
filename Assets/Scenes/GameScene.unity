@@ -892,6 +892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755244245}
   - component: {fileID: 1755244246}
+  - component: {fileID: 1755244247}
   m_Layer: 0
   m_Name: LaneGenerator
   m_TagString: Untagged
@@ -932,6 +933,19 @@ MonoBehaviour:
   laneSpacingY: 0.7
   laneXOffset: 10
   lanePrefab: {fileID: 7694152455164709030, guid: 555260cc99d8412419e5e0175ffda1c9, type: 3}
+--- !u!114 &1755244247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755244243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129bcbb2db002904ca7b324bde98939b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTransform: []
 --- !u!1 &2050868418
 GameObject:
   m_ObjectHideFlags: 0

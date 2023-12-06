@@ -22,8 +22,12 @@ public class LaneGenerator : MonoBehaviour
     
     public GameObject lanePrefab;
     
+    private MonsterSpawner monsterSpawner;
+
     void Start()
     {
+        monsterSpawner = GetComponent<MonsterSpawner>();
+
         for (var x = 0; x < width; x++)
         {
             for (var y = 0; y < height; y++)
@@ -31,6 +35,7 @@ public class LaneGenerator : MonoBehaviour
                 var point = new Vector3(x * laneSpacingX + laneXOffset, y * laneSpacingY, 0) + transform.position;
                 var obj = Instantiate(lanePrefab, point, Quaternion.identity);
                 obj.transform.parent = transform;
+                monsterSpawner.spawnTransform.Add(obj);
             }
         }
     }

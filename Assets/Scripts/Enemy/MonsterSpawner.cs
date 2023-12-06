@@ -53,7 +53,7 @@ public class MonsterSpawner : MonoBehaviour
                 GameObject monsterPrefab = ResourcesManager.Instance.GetPrefabById(monsterId);
                 if (monsterPrefab != null)
                 {
-                    Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation);
+                    Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
                 }
                 else
                 {

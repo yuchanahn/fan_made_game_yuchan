@@ -57,6 +57,8 @@ public class GameManager : Singleton<GameManager>
     [HideInInspector] public SlotGenerator slotGenerator;
 
     [HideInInspector] public MonsterSpawner monsterSpawner;
+
+    [HideInInspector] public List<Lane> lanes = new List<Lane>();
     #endregion
 
     #region Action

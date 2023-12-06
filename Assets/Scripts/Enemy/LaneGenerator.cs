@@ -34,6 +34,8 @@ public class LaneGenerator : MonoBehaviour
             {
                 var point = new Vector3(x * laneSpacingX + laneXOffset, y * laneSpacingY, 0) + transform.position;
                 var obj = Instantiate(lanePrefab, point, Quaternion.identity);
+                Lane objLane = obj.GetComponent<Lane>();
+                objLane.currentLane = y;
                 obj.transform.parent = transform;
                 monsterSpawner.spawnTransform.Add(obj);
             }

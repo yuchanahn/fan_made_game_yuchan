@@ -1,8 +1,6 @@
+using System;
 using Game.Database;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [RequireComponent(typeof(CircleCollider2D))]
 public class Enemy : MonoBehaviour
@@ -18,16 +16,28 @@ public class Enemy : MonoBehaviour
     private float monSkillStat2;
     private float monSkillStat3;
     private float coolTime;
-
+    private float coolTimeLeft;
+    MobSkillBase mobSkillData;
+    
     private void Start()
     {
         currentHP = maxHP;
+        GetComponent<CircleCollider2D>().radius = hitBoxSize;
+        mobSkillData = MobSkillBase.LoadSkill(monsterId);
+        coolTimeLeft = coolTime;
     }
 
     void Update()
     {
         transform.position += Vector3.left * (movSpd * Time.deltaTime);
-
+        coolTimeLeft -= Time.deltaTime;
+        
+        if (!coolTime.Equals(0) && coolTimeLeft <= 0)
+        {
+            mobSkillData.OnStart(this);
+            coolTimeLeft = coolTime;
+        }
+        
         if (!(transform.position.x <= -5)) return;
         
         ApplyDamageOnArrival();

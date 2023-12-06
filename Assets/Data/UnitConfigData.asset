@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   documentID: 1B4UCUFfTjq32BPKttF14hmEp1nkp6Evf
   Unit_CSV:
-  - unitName: "\uD32C\uCE58"
-    unitID: 1001
+  - unitName: "\uC641\uBB34\uC0C8"
+    unitID: 101
     unitGrade: 0
     attackRange: 1
     attackLine: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
     attackSpeed: 1.5
     projectileSpeed: 3
   - unitName: "\uB458\uAE30"
-    unitID: 1002
+    unitID: 102
     unitGrade: 0
     attackRange: 1
     attackLine: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     attackSpeed: 1.1
     projectileSpeed: 3
   - unitName: "\uB625\uAC15\uC544\uC9C0"
-    unitID: 1003
+    unitID: 103
     unitGrade: 0
     attackRange: 1
     attackLine: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
     attackSpeed: 1.2
     projectileSpeed: 3
   - unitName: "\uBC15\uC950"
-    unitID: 1004
+    unitID: 104
     unitGrade: 0
     attackRange: 1
     attackLine: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     attackSpeed: 1.2
     projectileSpeed: 3
   - unitName: "\uC8FC\uD3ED\uB3C4"
-    unitID: 1005
+    unitID: 105
     unitGrade: 0
     attackRange: 1
     attackLine: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
     attackSpeed: 1.1
     projectileSpeed: 3
   - unitName: "\uC138\uADE0"
-    unitID: 1006
+    unitID: 106
     unitGrade: 0
     attackRange: 1
     attackLine: 0
@@ -63,13 +63,517 @@ MonoBehaviour:
     attackSpeed: 0.65
     projectileSpeed: 3
   - unitName: "\uACE0\uB77C\uB2C8"
-    unitID: 1007
+    unitID: 107
     unitGrade: 0
     attackRange: 1
     attackLine: 0
     damage: 6
     attackSpeed: 1
     projectileSpeed: 3
+  - unitName: "\uCE68\uD32C\uCE58"
+    unitID: 201
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uD568\uCD08\uB871"
+    unitID: 202
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC131\uAE30\uC0AC \uC0EC\uB86F"
+    unitID: 203
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uB178\uC6C0 \uC544\uC800\uC528"
+    unitID: 204
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBC84\uD130\uC6B0\uC2A4 3\uC138"
+    unitID: 205
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uD06C\uB9AC\uC988"
+    unitID: 206
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC544\uC774 \uC4F0\uAED8\uB07C"
+    unitID: 207
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB370\uC2A4\uD574\uBA38 \uCD78\uB85C\uD0A4"
+    unitID: 208
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBBF8\uBBF8\uC9F1\uC9F1\uC138\uC6A9"
+    unitID: 209
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBE45\uD1A0\uB9AC"
+    unitID: 210
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uCCA0\uB3C4\uC655 \uAE38\uBC84\uD2B8"
+    unitID: 211
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC218\uC148\uC774"
+    unitID: 212
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC0AC\uB791\uC804\uB3C4\uC0AC \uC820\uD22C"
+    unitID: 213
+    unitGrade: 1
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB290\uADF8\uC790"
+    unitID: 301
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uCEA1\uD2F4 \uC124\uB9AC\uBC18"
+    unitID: 302
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC9C4\uD76C"
+    unitID: 303
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC544\uB9C8\uB370\uC6B0\uC2A4 \uCD5C"
+    unitID: 304
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC2DC\uB9AC\uC548 \uB808\uC778"
+    unitID: 305
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBD88\uACF0"
+    unitID: 306
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBBF8\uC2A4 \uBC1C\uB80C\uD0C0\uC778"
+    unitID: 307
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB2CC\uB2CC"
+    unitID: 308
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uD30C\uB9AC"
+    unitID: 309
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC641\uD30C\uACE0"
+    unitID: 310
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB2E8\uB2F5\uBC8C\uB808"
+    unitID: 311
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB178\uC2A4\uD398\uB77C\uD22C \uD638\uB4DC"
+    unitID: 312
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uAE40\uCE58\uB9CC\uB450\uBC88\uC601\uD0DD\uC0AC\uC2A4\uAC00"
+    unitID: 313
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uAD8C\uBBFC"
+    unitID: 314
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uACFD\uCD98\uC2DD"
+    unitID: 315
+    unitGrade: 2
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC544\uC774\uB124"
+    unitID: 401
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC9D5\uBC84\uAC70"
+    unitID: 402
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB9B4\uD30C"
+    unitID: 403
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC8FC\uB974\uB974"
+    unitID: 404
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uACE0\uC138\uAD6C"
+    unitID: 405
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBE44\uCC64"
+    unitID: 406
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC6B0\uC641\uAD73"
+    unitID: 407
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uD48D\uC2E0"
+    unitID: 408
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBE44\uC988\uB2C8\uC2A4 \uD0B4"
+    unitID: 409
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB3C5\uACE0\uD61C\uC9C0"
+    unitID: 410
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB3C4\uD30C\uBBFC \uBC15\uC0AC"
+    unitID: 411
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uCE74\uB974\uB098\uB974 \uC735\uD130\uB974"
+    unitID: 412
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uD788\uD0A4\uD0B9"
+    unitID: 413
+    unitGrade: 3
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB8B4\uD2B8\uAC8C\uB284"
+    unitID: 501
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uD574\uB8E8\uC11D"
+    unitID: 502
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC18C\uD53C\uC544"
+    unitID: 503
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uD504\uB9AC\uD130"
+    unitID: 504
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uCE98\uB9AC\uCE7C\uB9AC \uB370\uC774\uBE44\uC2A8"
+    unitID: 505
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBE44\uBC00 \uC18C\uB140"
+    unitID: 506
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uB355\uC218 \uD560\uC544\uBC14\uC774"
+    unitID: 507
+    unitGrade: 4
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC641\uD0C0\uBC84\uC2A4 \uC6B0\uC641\uAD73"
+    unitID: 601
+    unitGrade: 5
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uB3CC \uC544\uC774\uB124"
+    unitID: 701
+    unitGrade: 6
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uB3CC \uC9D5\uBC84\uAC70"
+    unitID: 702
+    unitGrade: 6
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uB3CC \uB9B4\uD30C"
+    unitID: 703
+    unitGrade: 6
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uB3CC \uC8FC\uB974\uB974"
+    unitID: 704
+    unitGrade: 6
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uB3CC \uACE0\uC138\uAD6C"
+    unitID: 705
+    unitGrade: 6
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uB3CC \uBE44\uCC64"
+    unitID: 706
+    unitGrade: 6
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC544\uC774\uB3CC \uB9E4\uB2C8\uC800 \uB8B4\uD2B8\uAC8C\uB284"
+    unitID: 801
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uB8E8\uC11D\uBC14 \uD574\uB8E8\uC11D "
+    unitID: 802
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC641\uD0C0\uC81C\uC77C\uAC80 \uD788\uD0A4\uD0B9"
+    unitID: 803
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBC14\uB78C\uD48D \uC2E0"
+    unitID: 804
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC2A4\uBC14\uB77C\uC2DC \uD504\uB9AC\uD130"
+    unitID: 805
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC120\uB7C9\uD55C \uC2DC\uBBFC \uC18C\uD53C\uC544"
+    unitID: 806
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uC774\uC138\uACC4\uB97C \uC9C0\uBC30\uD55C \uC790, \uC6B0\uC641\uAD73"
+    unitID: 807
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
+  - unitName: "\uBD80\uC815\uD615\uC778\uAC04"
+    unitID: 808
+    unitGrade: 7
+    attackRange: 0
+    attackLine: 0
+    damage: 0
+    attackSpeed: 0
+    projectileSpeed: 0
   Unit_ToolTip_Info:
   - unitName: "\uD32C\uCE58"
     unitID: 1001

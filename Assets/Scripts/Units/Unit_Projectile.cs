@@ -19,8 +19,9 @@ public class Unit_Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Unit"))
+        if (col.CompareTag("Enemy"))
         {
+            col.GetComponent<Enemy>().Damaged(damage);
             Destroy(gameObject);
         }
     }

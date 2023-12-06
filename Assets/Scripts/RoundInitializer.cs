@@ -12,12 +12,22 @@ public class RoundInitializer : MonoBehaviour
 
     private RoundSettings roundSettings;
 
-    private void Update()
+    private void Awake()
     {
-        currentRound = GameManager.Instance.currentRound;
-
         if (roundSettings == null)
             roundSettings = GetComponent<RoundSettings>();
+
+        InitializeRound();
+    }
+
+    private void Update()
+    {
+        InitializeRound();
+    }
+
+    public void InitializeRound()
+    {
+        currentRound = GameManager.Instance.currentRound;
 
         var data = roundConfigData.roundInfo.First(d => d.round == currentRound);
 
@@ -27,7 +37,7 @@ public class RoundInitializer : MonoBehaviour
             .ToArray();
 
         var roundSpawnNumData = roundConfigData.roundInfo
-            .Where (d => d.round == currentRound)
+            .Where(d => d.round == currentRound)
             .Select(d => d.spawnNum)
             .ToArray();
 

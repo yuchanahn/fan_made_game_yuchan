@@ -38,6 +38,7 @@ public class LaneGenerator : MonoBehaviour
                 monsterSpawner.spawnTransform.Add(obj);
             }
         }
+        monsterSpawner.UpdateSpawnPoints();
     }
 
 }

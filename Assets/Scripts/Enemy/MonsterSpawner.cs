@@ -5,33 +5,40 @@ using UnityEngine;
 public class MonsterSpawner : MonoBehaviour
 {
     public List<GameObject> spawnTransform = new List<GameObject>();
-
     private RoundSettings roundSettings;
+    public List<int> selectedSpawnPointIndices;
 
     private void Awake()
     {
+        roundSettings = GetComponent<RoundSettings>();
         GameManager.Instance.OnRoundStart += SpawnMonster;
     }
 
     private void Start()
     {
-        roundSettings = GetComponent<RoundSettings>();
+        selectedSpawnPointIndices = new List<int>();
+        UpdateSpawnPoints();
+    }
+
+    // 소환 위치 업데이트 메서드
+    public void UpdateSpawnPoints()
+    {
+        selectedSpawnPointIndices.Clear();
+        HashSet<int> uniqueIndices = new HashSet<int>();
+        int spawnLaneNum = roundSettings.spawnLaneNum;
+
+        while (uniqueIndices.Count < spawnLaneNum)
+        {
+            uniqueIndices.Add(Random.Range(0, spawnTransform.Count));
+        }
+
+        selectedSpawnPointIndices.AddRange(uniqueIndices);
     }
 
     public void SpawnMonster()
     {
-        Debug.Log("SpawnMonster");
-
         int[] monsterIds = roundSettings.monsterId;
         int[] spawnNums = roundSettings.spawnNum;
-        int spawnLaneNum = roundSettings.spawnLaneNum; // spawnLaneNum 추가
-
-        HashSet<int> selectedSpawnPoints = new HashSet<int>();
-
-        while (selectedSpawnPoints.Count < spawnLaneNum)
-        {
-            selectedSpawnPoints.Add(Random.Range(0, spawnTransform.Count));
-        }
 
         for (int i = 0; i < monsterIds.Length; i++)
         {
@@ -40,9 +47,8 @@ public class MonsterSpawner : MonoBehaviour
 
             for (int j = 0; j < numToSpawn; j++)
             {
-                int randomIndex = Random.Range(0, selectedSpawnPoints.Count);
-                int spawnPointIndex = new List<int>(selectedSpawnPoints)[randomIndex];
-                Transform spawnPoint = spawnTransform[spawnPointIndex].transform;
+                int spawnPointIndex = Random.Range(0, selectedSpawnPointIndices.Count);
+                Transform spawnPoint = spawnTransform[selectedSpawnPointIndices[spawnPointIndex]].transform;
 
                 GameObject monsterPrefab = ResourcesManager.Instance.GetPrefabById(monsterId);
                 if (monsterPrefab != null)
@@ -55,6 +61,8 @@ public class MonsterSpawner : MonoBehaviour
                 }
             }
         }
-    }
 
+        GameManager.Instance.currentRound++;
+        UpdateSpawnPoints();
+    }
 }

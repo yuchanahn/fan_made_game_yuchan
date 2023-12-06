@@ -864,11 +864,12 @@ MonoBehaviour:
   point: 0
   canMoveCount: 0
   addMovePrice: 10
-  currentRound: 8
+  currentRound: 1
   roundStartTrigger: 0
   canMove: 0
   isGameStart: 0
   slotGenerator: {fileID: 0}
+  monsterSpawner: {fileID: 0}
 --- !u!4 &1604284814
 Transform:
   m_ObjectHideFlags: 0
@@ -950,6 +951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTransform: []
+  selectedSpawnPointIndices: 
 --- !u!114 &1755244248
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,6 +38,7 @@ public class LaneGenerator : MonoBehaviour
                 objLane.currentLane = y;
                 obj.transform.parent = transform;
                 monsterSpawner.spawnTransform.Add(obj);
+                monsterSpawner.spawnTargets.Add(new Queue<GameObject>());
             }
         }
         monsterSpawner.UpdateSpawnPoints();

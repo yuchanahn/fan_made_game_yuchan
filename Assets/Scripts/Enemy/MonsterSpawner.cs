@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
 {
-    public List<GameObject> spawnTransform = new List<GameObject>();
+    public List<GameObject> spawnTransform = new();
     private RoundSettings roundSettings;
     public List<int> selectedSpawnPointIndices;
-
+    
+    public List<Queue<GameObject>> spawnTargets = new();
+    public float spawnInterval = 1.0f;
+    
     private void Awake()
     {
         roundSettings = GetComponent<RoundSettings>();
@@ -48,12 +52,15 @@ public class MonsterSpawner : MonoBehaviour
             for (int j = 0; j < numToSpawn; j++)
             {
                 int spawnPointIndex = Random.Range(0, selectedSpawnPointIndices.Count);
-                Transform spawnPoint = spawnTransform[selectedSpawnPointIndices[spawnPointIndex]].transform;
+                var pointIndex = selectedSpawnPointIndices[spawnPointIndex];
+                Transform spawnPoint = spawnTransform[pointIndex].transform;
 
                 GameObject monsterPrefab = ResourcesManager.Instance.GetPrefabById(monsterId);
+                
                 if (monsterPrefab != null)
                 {
-                    Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
+                    spawnTargets[pointIndex].Enqueue(monsterPrefab);
+                    //Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
                 }
                 else
                 {
@@ -61,8 +68,23 @@ public class MonsterSpawner : MonoBehaviour
                 }
             }
         }
-
+        StartCoroutine(RealSpawnMonster());
         GameManager.Instance.currentRound++;
         UpdateSpawnPoints();
+    }
+
+    IEnumerator RealSpawnMonster()
+    {
+        while(spawnTargets.Any(x => x.Any())) {
+            for (var i = 0; i < spawnTargets.Count; i++)
+            {
+                if (!spawnTargets[i].Any()) continue;
+
+                var spawnPoint = spawnTransform[i].transform;
+                var monsterPrefab = spawnTargets[i].Dequeue();
+                Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
+            }
+            yield return new WaitForSeconds(spawnInterval);
+        }
     }
 }

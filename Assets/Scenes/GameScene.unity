@@ -869,7 +869,6 @@ MonoBehaviour:
   canMove: 0
   isGameStart: 0
   slotGenerator: {fileID: 0}
-  roundSettings: {fileID: 0}
 --- !u!4 &1604284814
 Transform:
   m_ObjectHideFlags: 0

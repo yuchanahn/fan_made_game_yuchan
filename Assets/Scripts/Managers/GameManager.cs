@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -55,7 +56,11 @@ public class GameManager : Singleton<GameManager>
 
     [HideInInspector] public SlotGenerator slotGenerator;
 
-    [HideInInspector] public RoundSettings roundSettings;
+    [HideInInspector] public MonsterSpawner monsterSpawner;
+    #endregion
+
+    #region Action
+    public event Action OnRoundStart;
     #endregion
 
     private void Update()
@@ -67,6 +72,13 @@ public class GameManager : Singleton<GameManager>
         else
         {
             canMove = false;
+        }
+
+        if (roundStartTrigger)
+        {
+            RoundStartTrigger = true;
+            OnRoundStart?.Invoke();
+            roundStartTrigger = false;
         }
     }
 

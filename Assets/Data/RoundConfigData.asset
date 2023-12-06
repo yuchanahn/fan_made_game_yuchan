@@ -58,13 +58,13 @@ MonoBehaviour:
     bossLane: 0
   - round: 8
     monsterId: 1001
-    spawnNum: 0
+    spawnNum: 8
     spawnLaneNum: 2
     boss: 0
     bossLane: 0
   - round: 8
     monsterId: 1002
-    spawnNum: 0
+    spawnNum: 2
     spawnLaneNum: 0
     boss: 0
     bossLane: 0

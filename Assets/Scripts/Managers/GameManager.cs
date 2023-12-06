@@ -21,34 +21,8 @@ public class GameManager : Singleton<GameManager>
     [Header("라운드 세팅")]
     public int currentRound;
 
-    public int CurrentRound
-    {
-        get { return currentRound; }
-        set
-        {
-            if (value == currentRound + 1)
-            {
-                Debug.Log("다음 라운드로 넘어갑니다.");
-            }
-            currentRound = value;
-        }
-    }
-
     [Tooltip("라운드 시작 트리거")]
     public bool roundStartTrigger = false;
-
-    public bool RoundStartTrigger
-    {
-        get { return roundStartTrigger; }
-        set
-        {
-            if (value == true && roundStartTrigger == false)
-            {
-                Debug.Log("라운드가 시작되었습니다.");
-            }
-            roundStartTrigger = value;
-        }
-    }
 
     [HideInInspector] public bool canMove = false;
 
@@ -78,7 +52,6 @@ public class GameManager : Singleton<GameManager>
 
         if (roundStartTrigger)
         {
-            RoundStartTrigger = true;
             OnRoundStart?.Invoke();
             roundStartTrigger = false;
         }

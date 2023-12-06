@@ -26,7 +26,17 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        transform.position += Vector3.left * (movSpd * Time.deltaTime);
+
+        if (!(transform.position.x <= -5)) return;
         
+        ApplyDamageOnArrival();
+        Destroy(gameObject);
+    }
+
+    void ApplyDamageOnArrival()
+    {
+        Debug.Log("ApplyDamageOnArrival");
     }
 
     public void Damaged(float dmg)

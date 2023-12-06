@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitConfigData: {fileID: 11400000, guid: ac0f1031bb442d04fa5561bc75b8a7d8, type: 2}
-  unitID: 1001
+  unitID: 101
 --- !u!114 &7528399269306072979
 MonoBehaviour:
   m_ObjectHideFlags: 0

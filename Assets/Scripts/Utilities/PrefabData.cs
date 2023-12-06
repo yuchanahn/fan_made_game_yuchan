@@ -8,7 +8,7 @@ public class PrefabProbability
     [Range(0, 1)] public float probability;
 }
 
-[CreateAssetMenu(fileName = "PrefabData", menuName = "ScriptableObjects/PrefabData", order = 1)]
+[CreateAssetMenu(fileName = "PrefabData", menuName = "PrefabData")]
 public class PrefabData : ScriptableObject
 {
     public PrefabProbability[] prefabProbabilities;

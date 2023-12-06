@@ -5,7 +5,7 @@ using SJJ.GoogleSheetsDatabase;
 
 namespace Game.Database
 {
-    [CreateAssetMenu(fileName = "RoundConfigData", menuName = "RoundConfigData")]
+    [CreateAssetMenu(fileName = "RoundConfigData", menuName = "ConfigData/RoundConfigData")]
     public class RoundConfigData : DataContainerBase
     {
         [PageName("roundInfo")]

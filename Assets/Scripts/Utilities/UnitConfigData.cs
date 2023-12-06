@@ -17,7 +17,7 @@ namespace Game.Database
         HIDDEN,
     }
 
-    [CreateAssetMenu(fileName = "UnitConfigData", menuName = "UnitConfigData")]
+    [CreateAssetMenu(fileName = "UnitConfigData", menuName = "ConfigData/UnitConfigData")]
     public class UnitConfigData : DataContainerBase
     {
         [PageName("Unit_CSV")]

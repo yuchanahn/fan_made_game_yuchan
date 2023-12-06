@@ -5,7 +5,7 @@ using SJJ.GoogleSheetsDatabase;
 
 namespace Game.Database
 {
-    [CreateAssetMenu(fileName = "EnemyConfigData", menuName = "EnemyConfigData")]
+    [CreateAssetMenu(fileName = "EnemyConfigData", menuName = "ConfigData/EnemyConfigData")]
     public class EnemyConfigData : DataContainerBase
     {
         [PageName("monsterStat")]

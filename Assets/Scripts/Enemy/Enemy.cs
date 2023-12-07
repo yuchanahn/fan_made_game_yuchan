@@ -1,16 +1,18 @@
 using System;
 using Game.Database;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CircleCollider2D))]
 public class Enemy : MonoBehaviour
 {
-    public float currentHP;
+   public float currentHp;
 
     private string monsterName;
     private int monsterId;
     private float movSpd;
-    private float maxHP;
+    private float maxHp;
     private float hitBoxSize;
     private float monSkillStat1;
     private float monSkillStat2;
@@ -21,11 +23,13 @@ public class Enemy : MonoBehaviour
     
     private void Start()
     {
-        currentHP = maxHP;
+        currentHp = maxHp;
         GetComponent<CircleCollider2D>().radius = hitBoxSize;
         mobSkillData = MobSkillBase.LoadSkill(monsterId);
-        mobSkillData.Init(new float[] {monSkillStat1, monSkillStat2, monSkillStat3});
-        coolTimeLeft = coolTime;
+        mobSkillData.Init(new[] {monSkillStat1, monSkillStat2, monSkillStat3});
+        coolTimeLeft = 0;
+        
+        GetComponentInChildren<Text>().text = monsterName;
     }
 
     void Update()
@@ -52,9 +56,9 @@ public class Enemy : MonoBehaviour
 
     public void Damaged(float dmg)
     {
-        currentHP -= dmg;
+        currentHp -= dmg;
 
-        if (currentHP <= 0)
+        if (currentHp <= 0)
         {
             Destroy(gameObject);
         }
@@ -65,7 +69,7 @@ public class Enemy : MonoBehaviour
         monsterName = data.monsterName;
         monsterId = data.monsterId;
         movSpd = data.movSpd;
-        maxHP = data.maxHP;
+        maxHp = data.maxHP;
         hitBoxSize = data.hitBoxSize;
         monSkillStat1 = data.monSkillStat1;
         monSkillStat2 = data.monSkillStat2;

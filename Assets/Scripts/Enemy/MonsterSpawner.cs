@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
@@ -35,12 +36,21 @@ public class MonsterSpawner : MonoBehaviour
         {
             uniqueIndices.Add(Random.Range(0, spawnTransform.Count));
         }
-
+        
         selectedSpawnPointIndices.AddRange(uniqueIndices);
+
+        if (spawnTransform.Count > 0)
+        {
+            RoundManager.Instance.onRoundEndOnce += () =>
+                selectedSpawnPointIndices.ForEach(x => spawnTransform[x].GetComponent<Lane>().SetLaneReddy(true));
+        }
     }
 
     public void SpawnMonster()
     {
+        selectedSpawnPointIndices.ForEach(x => spawnTransform[x].GetComponent<Lane>().SetLaneReddy(false));
+        RoundManager.Instance.OnRoundStarted();
+        
         int[] monsterIds = roundSettings.monsterId;
         int[] spawnNums = roundSettings.spawnNum;
 

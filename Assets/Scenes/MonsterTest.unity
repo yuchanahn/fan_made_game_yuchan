@@ -240,7 +240,7 @@ MonoBehaviour:
   canMoveCount: 0
   addMovePrice: 10
   currentRound: 1
-  roundStartTrigger: 1
+  roundStartTrigger: 0
   canMove: 0
   isGameStart: 0
   slotGenerator: {fileID: 0}
@@ -945,6 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTransform: []
   selectedSpawnPointIndices: 
+  spawnInterval: 0.5
 --- !u!114 &1658866641
 MonoBehaviour:
   m_ObjectHideFlags: 0

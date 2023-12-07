@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
    public float currentHp;
+   public int currentLane;
 
     private string monsterName;
     private int monsterId;
@@ -34,7 +35,13 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        transform.position += Vector3.left * (movSpd * Time.deltaTime);
+        var position = transform.position;
+        position += Vector3.left * (movSpd * Time.deltaTime);
+        
+        //라인 이동
+        var targetPos = new Vector3(position.x, GameManager.Instance.lanes[currentLane].transform.position.y, 0);
+        transform.position = Vector3.MoveTowards(position, targetPos, movSpd * Time.deltaTime);
+
         coolTimeLeft -= Time.deltaTime;
         
         if (!coolTime.Equals(0) && coolTimeLeft <= 0)
@@ -42,6 +49,8 @@ public class Enemy : MonoBehaviour
             mobSkillData.OnStart(this);
             coolTimeLeft = coolTime;
         }
+        
+        
         
         if (!(transform.position.x <= -5)) return;
         

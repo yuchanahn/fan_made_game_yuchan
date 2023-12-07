@@ -12,6 +12,11 @@ public class Mob1002SkillData : MobSkillBase
 
     public override void OnStart(Enemy enemy)
     {
-        Debug.Log("Mob1002Skill!!");
+        var moveDelta = (int)moveLane * Random.Range(0, 2) * 2 - 1;
+        var targetLane = enemy.currentLane + moveDelta;
+        if(targetLane < 0 || GameManager.Instance.lanes.Count <= targetLane)
+            targetLane = enemy.currentLane - moveDelta * 2;
+        targetLane = Mathf.Clamp(targetLane, 0, GameManager.Instance.lanes.Count - 1);
+        enemy.currentLane = targetLane;
     }
 }

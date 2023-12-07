@@ -92,7 +92,8 @@ public class MonsterSpawner : MonoBehaviour
 
                 var spawnPoint = spawnTransform[i].transform;
                 var monsterPrefab = spawnTargets[i].Dequeue();
-                Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
+                var enemy = Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
+                enemy.GetComponent<Enemy>().currentLane = i;
             }
             yield return new WaitForSeconds(spawnInterval);
         }

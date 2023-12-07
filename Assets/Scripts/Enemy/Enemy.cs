@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
         currentHP = maxHP;
         GetComponent<CircleCollider2D>().radius = hitBoxSize;
         mobSkillData = MobSkillBase.LoadSkill(monsterId);
+        mobSkillData.Init(new float[] {monSkillStat1, monSkillStat2, monSkillStat3});
         coolTimeLeft = coolTime;
     }
 

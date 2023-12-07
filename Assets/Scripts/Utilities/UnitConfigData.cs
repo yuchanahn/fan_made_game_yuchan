@@ -43,6 +43,7 @@ namespace Game.Database
     public class UnitSkillData
     {
         public string unitName;
+        public string skillName;
         public int unitID;
         public EUNITGRADE unitGrade;
         public float attackRange;

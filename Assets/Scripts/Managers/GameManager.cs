@@ -54,6 +54,7 @@ public class GameManager : Singleton<GameManager>
         {
             OnRoundStart?.Invoke();
             roundStartTrigger = false;
+            isGameStart = true;
         }
     }
 

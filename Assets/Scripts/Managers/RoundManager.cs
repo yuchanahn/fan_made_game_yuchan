@@ -27,7 +27,8 @@ public class RoundManager : Singleton<RoundManager>
         onRoundEndOnce = null;
         
         isRoundStarted = false;
-        
+        GameManager.Instance.isGameStart = false;
+
         Debug.Log("Round Ended");
     }
 

@@ -66,7 +66,7 @@ public class Draggable : MonoBehaviour
             GameManager.Instance.canMoveCount--;
         }
 
-        //hasBeenDragged = true; // 기획 수정됨 라운드 전은 자유 이동
+        hasBeenDragged = true; // 기획 수정됨 라운드 전은 자유 이동
         SnapToSlot();
         myCollider.enabled = true;
         draggable = false;

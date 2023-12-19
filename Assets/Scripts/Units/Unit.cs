@@ -1,4 +1,5 @@
 using Game.Database;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,16 +13,20 @@ public class Unit : MonoBehaviour
     private EUNITGRADE unitGrade;
     private float attackRange;
     private int attackLine;
-    private int damage;
+    private float damage;
     private float attackSpeed;
     private float projectileSpeed;
 
     public GameObject bulletPrefab;
 
+    private float originalDamage;
     private float lastShootTime;
+
+    public event Action OnShoot;
 
     private void Start()
     {
+        originalDamage = damage;
         lastShootTime = Time.time;
     }
 
@@ -41,6 +46,8 @@ public class Unit : MonoBehaviour
             Unit_Projectile bullet = Instantiate(bulletPrefab, GetBulletSpawnPosition(i), Quaternion.identity).GetComponent<Unit_Projectile>();
             bullet.Initialize(damage, projectileSpeed);
         }
+
+        OnShoot?.Invoke();
     }
 
     private Vector3 GetBulletSpawnPosition(int line)
@@ -62,5 +69,15 @@ public class Unit : MonoBehaviour
         damage = data.damage;
         attackSpeed = data.attackSpeed;
         projectileSpeed = data.projectileSpeed;
+    }
+
+    public void ModifyProjectileDamage(float multiplier)
+    {
+        damage *= multiplier;
+    }
+
+    public void ResetProjectileDamage()
+    {
+        damage = originalDamage;
     }
 }

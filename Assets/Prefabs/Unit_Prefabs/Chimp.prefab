@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3046231430784833465}
   - component: {fileID: 1225437163019346640}
   - component: {fileID: 7528399269306072979}
+  - component: {fileID: 7160534792167648814}
   m_Layer: 0
   m_Name: Chimp
   m_TagString: Untagged
@@ -159,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitConfigData: {fileID: 11400000, guid: ac0f1031bb442d04fa5561bc75b8a7d8, type: 2}
-  unitID: 101
+  unitID: 201
 --- !u!114 &7528399269306072979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,3 +174,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenDragged: 0
+--- !u!114 &7160534792167648814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600613448557096827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660a5fa8d938979428399d8ecbfe23c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

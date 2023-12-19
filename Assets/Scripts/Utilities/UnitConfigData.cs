@@ -34,7 +34,7 @@ namespace Game.Database
         public EUNITGRADE unitGrade;
         public float attackRange;
         public int attackLine;
-        public int damage;
+        public float damage;
         public float attackSpeed;
         public float projectileSpeed;
     }

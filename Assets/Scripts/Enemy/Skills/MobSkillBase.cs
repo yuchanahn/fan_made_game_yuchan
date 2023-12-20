@@ -15,8 +15,8 @@ public class MobSkillBase
 
     public static MobSkillBase LoadSkill(int mobId) => mobId switch
     {
-        1001 => new Mob1001SkillData(),
+        1001 => new MobDefaultSkillData(),
         1002 => new Mob1002SkillData(),
-        _ => null
+        _ => new MobDefaultSkillData()
     };
 }

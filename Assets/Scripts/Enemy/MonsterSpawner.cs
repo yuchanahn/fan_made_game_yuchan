@@ -53,6 +53,8 @@ public class MonsterSpawner : MonoBehaviour
         
         int[] monsterIds = roundSettings.monsterId;
         int[] spawnNums = roundSettings.spawnNum;
+        RoundManager.Instance.maxMonstersInRound = spawnNums.Sum();
+        RoundManager.Instance.spawnedMonsters = 0;
 
         for (int i = 0; i < monsterIds.Length; i++)
         {
@@ -94,6 +96,7 @@ public class MonsterSpawner : MonoBehaviour
                 var monsterPrefab = spawnTargets[i].Dequeue();
                 var enemy = Instantiate(monsterPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
                 enemy.GetComponent<Enemy>().currentLane = i;
+                RoundManager.Instance.spawnedMonsters++;
             }
             yield return new WaitForSeconds(spawnInterval);
         }

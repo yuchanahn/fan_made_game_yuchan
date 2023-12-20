@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RoundManager : Singleton<RoundManager>
 {
@@ -7,6 +8,12 @@ public class RoundManager : Singleton<RoundManager>
     public Action onRoundStartOnce;
     public Action onRoundEnd = null;
     public Action onRoundEndOnce;
+    
+    public int CurrentMonsterCount => FindObjectsOfType<Enemy>().Length;
+    public int maxMonstersInRound;
+    public int spawnedMonsters;
+
+    private bool IsAllMonsterSpawned => spawnedMonsters >= maxMonstersInRound;
 
     [SerializeField] private bool isRoundStarted = true;
     public void OnRoundStarted()
@@ -34,8 +41,9 @@ public class RoundManager : Singleton<RoundManager>
 
     private void Update()
     {
-        if (!isRoundStarted || FindAnyObjectByType<Enemy>()) return;
+        if (!isRoundStarted || FindAnyObjectByType<Enemy>() || !IsAllMonsterSpawned) return;
         
+        spawnedMonsters = 0;
         isRoundStarted = false;
         OnRoundEnded();
     }

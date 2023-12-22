@@ -169,8 +169,9 @@ GameObject:
   - component: {fileID: 8714616683738957925}
   - component: {fileID: 3709817219723126376}
   - component: {fileID: 6291613038106437074}
+  - component: {fileID: 1840838605173378870}
   m_Layer: 5
-  m_Name: RcipeSlot
+  m_Name: RecipeSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,6 +236,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1840838605173378870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5326698877574805993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8dea41c2bcf944e89d1eb2471a1118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: 
+  unitGrade: 
+  mainComb: 
+  subComb: []
+  point: 0
 --- !u!1 &7432122201878243700
 GameObject:
   m_ObjectHideFlags: 0

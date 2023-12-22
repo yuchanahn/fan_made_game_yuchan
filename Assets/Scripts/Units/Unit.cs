@@ -7,7 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(Draggable), typeof(BoxCollider2D))]
 public class Unit : MonoBehaviour
 {
-    private string unitName;
+    public string unitName;
     private string skillName;
     private int unitID;
     private EUNITGRADE unitGrade;
@@ -52,7 +52,7 @@ public class Unit : MonoBehaviour
 
     private Vector3 GetBulletSpawnPosition(int line)
     {
-        float lineHeight = 0.7f; // ���� ���� ���� �Ÿ� (���ӿ� �°� ���� �ʿ�)
+        float lineHeight = 0.7f; // ???? ???? ???? ??? (????? ?°? ???? ???)
 
         float verticalPosition = (line - (attackRange - 1) / 2.0f) * lineHeight;
 

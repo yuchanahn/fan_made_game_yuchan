@@ -8,7 +8,7 @@ using UnityEngine;
 public class UnitCombConfigData : DataContainerBase
 {
     [PageName("Unit_Comb")]
-    public List<RecipeData> Unit_Comb;
+    public List<RecipeData> unit_Comb;
 }
 
 [System.Serializable]

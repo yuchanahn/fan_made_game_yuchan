@@ -157,8 +157,9 @@ GameObject:
   - component: {fileID: 2367780865833735502}
   - component: {fileID: 6608574252543163408}
   - component: {fileID: 1935754370254282407}
+  - component: {fileID: 1874688949363877487}
   m_Layer: 5
-  m_Name: RcipeUI_Canvas
+  m_Name: RecipeUI_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,6 +248,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1874688949363877487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038236094893050090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1394b5a46022a824dbbbe71f73833c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeBox: {fileID: 7272727546228039186}
+  recipeSlotPrefab: {fileID: 5326698877574805993, guid: d72b87fa7c553654190e2774783830fc, type: 3}
+  unitCombConfigData: {fileID: 11400000, guid: 320ce9586d9470f49b6f0fea5495fe59, type: 2}
 --- !u!1 &5698083940733366998
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1530756128340116096}
+  - component: {fileID: 7272727546228039186}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -281,8 +298,22 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 132.9539}
+  m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &7272727546228039186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698083940733366998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e079d1f45f58f74dac2c37c1d400273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spacing: 20
+  content: {fileID: 1530756128340116096}
 --- !u!1 &5978847686220098272
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,7 +920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8714616683738957925, guid: d72b87fa7c553654190e2774783830fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -55
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8714616683738957925, guid: d72b87fa7c553654190e2774783830fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -906,8 +937,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5326698877574805993, guid: d72b87fa7c553654190e2774783830fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1043843838531221902}
   m_SourcePrefab: {fileID: 100100000, guid: d72b87fa7c553654190e2774783830fc, type: 3}
+--- !u!1 &6603278268491736445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5326698877574805993, guid: d72b87fa7c553654190e2774783830fc, type: 3}
+  m_PrefabInstance: {fileID: 1319469965305240724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1043843838531221902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603278268491736445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8dea41c2bcf944e89d1eb2471a1118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: 
+  unitGrade: 
+  mainComb: 
+  subComb: []
+  point: 0
 --- !u!224 &7691931847087150321 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8714616683738957925, guid: d72b87fa7c553654190e2774783830fc, type: 3}

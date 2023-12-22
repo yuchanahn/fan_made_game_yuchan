@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: UnitCombConfigData
   m_EditorClassIdentifier: 
   documentID: 1B4UCUFfTjq32BPKttF14hmEp1nkp6Evf
-  Unit_Comb:
-  - unitName: 
-    unitGrade: 
+  unit_Comb:
+  - unitName: "\uC641\uBB34\uC0C8"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -23,8 +23,8 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uB458\uAE30"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -32,8 +32,8 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uB625\uAC15\uC544\uC9C0"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -41,8 +41,8 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uBC15\uC950"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -50,8 +50,8 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uC8FC\uD3ED\uB3C4"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -59,8 +59,8 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uC138\uADE0"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -68,8 +68,8 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uACE0\uB77C\uB2C8"
+    unitGrade: "\uC77C\uBC18"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -77,485 +77,342 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uCE68\uD32C\uCE58"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uC641\uBB34\uC0C8"
+    subComb1: "\uC641\uBB34\uC0C8"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
-    subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uD568\uCD08\uB871"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uC641\uBB34\uC0C8"
+    subComb1: "\uC8FC\uD3ED\uB3C4"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC131\uAE30\uC0AC \uC0EC\uB86F"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uB458\uAE30"
+    subComb1: "\uACE0\uB77C\uB2C8"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC774\uB178\uC6C0 \uC544\uC800\uC528"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uC8FC\uD3ED\uB3C4"
+    subComb1: "\uC138\uADE0"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uBC84\uD130\uC6B0\uC2A4 3\uC138"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uB625\uAC15\uC544\uC9C0"
+    subComb1: "\uACE0\uB77C\uB2C8"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uD06C\uB9AC\uC988"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uC138\uADE0"
+    subComb1: "\uC641\uBB34\uC0C8"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC544\uC774 \uC4F0\uAED8\uB07C"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uBC15\uC950"
+    subComb1: "\uC8FC\uD3ED\uB3C4"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uB370\uC2A4\uD574\uBA38 \uCD78\uB85C\uD0A4"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uB458\uAE30"
+    subComb1: "\uB458\uAE30"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uBBF8\uBBF8\uC9F1\uC9F1\uC138\uC6A9"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uC138\uADE0"
+    subComb1: "\uC138\uADE0"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uBE45\uD1A0\uB9AC"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uACE0\uB77C\uB2C8"
+    subComb1: "\uACE0\uB77C\uB2C8"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uCCA0\uB3C4\uC655 \uAE38\uBC84\uD2B8"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uB625\uAC15\uC544\uC9C0"
+    subComb1: "\uB625\uAC15\uC544\uC9C0"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC218\uC148\uC774"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uBC15\uC950"
+    subComb1: "\uBC15\uC950"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC0AC\uB791\uC804\uB3C4\uC0AC \uC820\uD22C"
+    unitGrade: "\uACE0\uAE09"
+    mainComb: "\uACE0\uB77C\uB2C8"
+    subComb1: "\uBC15\uC950"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uB290\uADF8\uC790"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uCE68\uD32C\uCE58"
+    subComb1: "\uCE68\uD32C\uCE58"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uCEA1\uD2F4 \uC124\uB9AC\uBC18"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uCCA0\uB3C4\uC655 \uAE38\uBC84\uD2B8"
+    subComb1: "\uB370\uC2A4\uD574\uBA38 \uCD78\uB85C\uD0A4"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC9C4\uD76C"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uBE45\uD1A0\uB9AC"
+    subComb1: "\uC218\uC148\uC774"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC544\uB9C8\uB370\uC6B0\uC2A4 \uCD5C"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uBC84\uD130\uC6B0\uC2A4 3\uC138"
+    subComb1: "\uCCA0\uB3C4\uC655 \uAE38\uBC84\uD2B8"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC2DC\uB9AC\uC548 \uB808\uC778"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uBBF8\uBBF8\uC9F1\uC9F1\uC138\uC6A9"
+    subComb1: "\uBE45\uD1A0\uB9AC"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+  - unitName: "\uBD88\uACF0"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uB625\uAC15\uC544\uC9C0"
+    subComb1: "\uC8FC\uD3ED\uB3C4"
+    subComb2: "\uC218\uC148\uC774"
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uBBF8\uC2A4 \uBC1C\uB80C\uD0C0\uC778"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uC131\uAE30\uC0AC \uC0EC\uB86F"
+    subComb1: "\uBE45\uD1A0\uB9AC"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uB2CC\uB2CC"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uB370\uC2A4\uD574\uBA38 \uCD78\uB85C\uD0A4"
+    subComb1: "\uBBF8\uBBF8\uC9F1\uC9F1\uC138\uC6A9"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uC774\uD30C\uB9AC"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uB458\uAE30, \uB625\uAC15\uC544\uC9C0, \uBC15\uC950, \uC8FC\uD3ED\uB3C4,
+      \uC138\uADE0, \uACE0\uB77C\uB2C8 \uC911 \uD0DD 3"
     subComb1: 
-    subComb2: 
+    subComb2: "\uC641\uBB34\uC0C8"
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uC641\uD30C\uACE0"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uD06C\uB9AC\uC988"
+    subComb1: "\uCE68\uD32C\uCE58"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uB2E8\uB2F5\uBC8C\uB808"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uC218\uC148\uC774"
+    subComb1: "\uCE68\uD32C\uCE58"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uB178\uC2A4\uD398\uB77C\uD22C \uD638\uB4DC"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uC544\uC774 \uC4F0\uAED8\uB07C"
+    subComb1: "\uB370\uC2A4\uD574\uBA38 \uCD78\uB85C\uD0A4"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+  - unitName: "\uAE40\uCE58\uB9CC\uB450\uBC88\uC601\uD0DD\uC0AC\uC2A4\uAC00"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uC774\uB178\uC6C0 \uC544\uC800\uC528"
+    subComb1: "\uC8FC\uD3ED\uB3C4"
+    subComb2: "\uC138\uADE0"
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+  - unitName: "\uAD8C\uBBFC"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uC0AC\uB791\uC804\uB3C4\uC0AC \uC820\uD22C"
+    subComb1: "\uACE0\uB77C\uB2C8"
+    subComb2: "\uC8FC\uD3ED\uB3C4"
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uACFD\uCD98\uC2DD"
+    unitGrade: "\uD76C\uADC0"
+    mainComb: "\uD568\uCD08\uB871"
+    subComb1: "\uC0AC\uB791\uC804\uB3C4\uC0AC \uC820\uD22C"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uC544\uC774\uB124"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uB458\uAE30"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uC9D5\uBC84\uAC70"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uB625\uAC15\uC544\uC9C0"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uB9B4\uD30C"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uBC15\uC950"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uC8FC\uB974\uB974"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uC8FC\uD3ED\uB3C4"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uACE0\uC138\uAD6C"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uC138\uADE0\uB2E8"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uBE44\uCC64"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uACE0\uB77C\uB2C8"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
+  - unitName: "\uC6B0\uC641\uAD73"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uC641\uD30C\uACE0"
+    subComb1: "\uAE40\uCE58\uB9CC\uB450\uBC88\uC601\uD0DD\uC0AC\uC2A4\uAC00"
+    subComb2: "\uCEA1\uD2F4 \uC124\uB9AC\uBC18"
+    subComb3: "\uAD8C\uBBFC"
+    subComb4: "\uACFD\uCD98\uC2DD"
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uD48D\uC2E0"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uB458\uAE30"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uBE44\uC988\uB2C8\uC2A4 \uD0B4"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uD788\uD0A4\uD0B9"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uD558\uCFE0 0089"
+    unitGrade: "\uC804\uC124"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -563,35 +420,35 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+  - unitName: "\uB3C5\uACE0\uD61C\uC9C0"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uAD8C\uBBFC"
+    subComb1: "\uB2E8\uB2F5\uBC8C\uB808"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uB3C4\uD30C\uBBFC \uBC15\uC0AC"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uC641\uD30C\uACE0"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+  - unitName: "\uCE74\uB974\uB098\uB974 \uC735\uD130\uB974"
+    unitGrade: "\uC804\uC124"
+    mainComb: "\uB178\uC2A4\uD398\uB77C\uD22C \uD638\uB4DC"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
+  - unitName: "\uD788\uD0A4\uD0B9"
+    unitGrade: "\uC804\uC124"
     mainComb: 
     subComb1: 
     subComb2: 
@@ -599,174 +456,192 @@ MonoBehaviour:
     subComb4: 
     subComb5: 
     point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
+  - unitName: "\uB8B4\uD2B8\uAC8C\uB284"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uC9D5\uBC84\uAC70"
+    subComb1: "\uC8FC\uB974\uB974"
+    subComb2: "\uB9B4\uD30C"
+    subComb3: "\uC544\uC774\uB124"
+    subComb4: "\uBE44\uCC64"
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+    point: 3
+  - unitName: "\uD574\uB8E8\uC11D"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uC8FC\uB974\uB974"
+    subComb1: "\uC9D5\uBC84\uAC70"
+    subComb2: "\uAD8C\uBBFC"
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+    point: 3
+  - unitName: "\uC18C\uD53C\uC544"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uC9D5\uBC84\uAC70"
+    subComb1: "\uD48D\uC2E0"
+    subComb2: "\uB3C4\uD30C\uBBFC \uBC15\uC0AC"
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+    point: 3
+  - unitName: "\uD504\uB9AC\uD130"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uCE74\uB974\uB098\uB974 \uC735\uD130\uB974"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+    point: 3
+  - unitName: "\uCE98\uB9AC\uCE7C\uB9AC \uB370\uC774\uBE44\uC2A8"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uBE45\uD1A0\uB9AC"
+    subComb1: "\uB3C4\uD30C\uBBFC \uBC15\uC0AC"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+    point: 3
+  - unitName: "\uBE44\uBC00 \uC18C\uB140"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uB3C5\uACE0\uD61C\uC9C0"
+    subComb1: "\uD48D\uC2E0"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+    point: 3
+  - unitName: "\uC774\uB355\uC218 \uD560\uC544\uBC14\uC774"
+    unitGrade: "\uBD88\uBA78"
+    mainComb: "\uACFD\uCD98\uC2DD"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+    point: 3
+  - unitName: "\uC641\uD0C0\uBC84\uC2A4 \uC6B0\uC641\uAD73"
+    unitGrade: "\uC6B0\uC641\uAD73"
+    mainComb: "\uB8B4\uD2B8\uAC8C\uB284"
+    subComb1: "\uD574\uB8E8\uC11D"
+    subComb2: "\uC8FC\uB974\uB974"
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+    point: 10
+  - unitName: "\uC774\uC138\uB3CC \uC544\uC774\uB124"
+    unitGrade: "\uC774\uC138\uB3CC"
+    mainComb: "\uB9B4\uD30C"
+    subComb1: "\uB8B4\uD2B8\uAC8C\uB284"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
+    point: 10
+  - unitName: "\uC774\uC138\uB3CC \uC9D5\uBC84\uAC70"
+    unitGrade: "\uC774\uC138\uB3CC"
+    mainComb: "\uC18C\uD53C\uC544"
+    subComb1: "\uD48D\uC2E0"
+    subComb2: "\uB3C4\uD30C\uBBFC \uBC15\uC0AC"
+    subComb3: "\uD574\uB8E8\uC11D"
+    subComb4: "\uB8B4\uD2B8\uAC8C\uB284"
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
+    point: 10
+  - unitName: "\uC774\uC138\uB3CC \uB9B4\uD30C"
+    unitGrade: "\uC774\uC138\uB3CC"
+    mainComb: "\uC544\uC774\uB124"
+    subComb1: "\uB3C5\uACE0\uD61C\uC9C0"
+    subComb2: "\uBE44\uC988\uB2C8\uC2A4 \uD0B4"
+    subComb3: "\uB2E8\uB2F5\uBC8C\uB808"
+    subComb4: "\uB8B4\uD2B8\uAC8C\uB284"
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
-    subComb4: 
+    point: 10
+  - unitName: "\uC774\uC138\uB3CC \uC8FC\uB974\uB974"
+    unitGrade: "\uC774\uC138\uB3CC"
+    mainComb: "\uACE0\uC138\uAD6C"
+    subComb1: "\uB8B4\uD2B8\uAC8C\uB284"
+    subComb2: "\uC641\uD30C\uACE0"
+    subComb3: "\uCE74\uB974\uB098\uB974 \uC735\uD130\uB974"
+    subComb4: "\uD574\uB8E8\uC11D"
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
+    point: 10
+  - unitName: "\uC774\uC138\uB3CC \uACE0\uC138\uAD6C"
+    unitGrade: "\uC774\uC138\uB3CC"
+    mainComb: "\uC8FC\uB974\uB974"
+    subComb1: "\uB8B4\uD2B8\uAC8C\uB284"
+    subComb2: "\uCE98\uB9AC\uCE7C\uB9AC \uB370\uC774\uBE44\uC2A8"
+    subComb3: "\uD504\uB9AC\uD130"
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
-    subComb3: 
+    point: 10
+  - unitName: "\uC774\uC138\uB3CC \uBE44\uCC64"
+    unitGrade: "\uC774\uC138\uB3CC"
+    mainComb: "\uC544\uC774\uB124"
+    subComb1: "\uB9B4\uD30C"
+    subComb2: "\uB8B4\uD2B8\uAC8C\uB284"
+    subComb3: "\uAE40\uCE58\uB9CC\uB450\uBC88\uC601\uD0DD\uC0AC\uC2A4\uAC00"
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
+    point: 10
+  - unitName: "\uC544\uC774\uB3CC \uB9E4\uB2C8\uC800 \uB8B4\uD2B8\uAC8C\uB284"
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uC774\uC138\uB3CC \uC544\uC774\uB124"
+    subComb1: "\uC774\uC138\uB3CC \uC9D5\uBC84\uAC70"
+    subComb2: "\uC774\uC138\uB3CC \uB9B4\uD30C"
+    subComb3: "\uC774\uC138\uB3CC \uC8FC\uB974\uB974"
+    subComb4: "\uC774\uC138\uB3CC \uACE0\uC138\uAD6C"
+    subComb5: "\uC774\uC138\uB3CC \uBE44\uCC64"
+    point: 10
+  - unitName: "\uB8E8\uC11D\uBC14 \uD574\uB8E8\uC11D "
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uD788\uD0A4\uD0B9"
+    subComb1: "\uAD8C\uBBFC"
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
-    subComb1: 
-    subComb2: 
+    point: 10
+  - unitName: "\uC641\uD0C0\uC81C\uC77C\uAC80 \uD788\uD0A4\uD0B9"
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uB3C4\uD30C\uBBFC \uBC15\uC0AC"
+    subComb1: "\uAD8C\uBBFC"
+    subComb2: "\uD574\uB8E8\uC11D"
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+    point: 10
+  - unitName: "\uBC14\uB78C\uD48D \uC2E0"
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uBE44\uBC00 \uC18C\uB140"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+    point: 10
+  - unitName: "\uC2A4\uBC14\uB77C\uC2DC \uD504\uB9AC\uD130"
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uCE98\uB9AC\uCE7C\uB9AC \uB370\uC774\uBE44\uC2A8"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
-  - unitName: 
-    unitGrade: 
-    mainComb: 
+    point: 10
+  - unitName: "\uC120\uB7C9\uD55C \uC2DC\uBBFC \uC18C\uD53C\uC544"
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uBE44\uBC00 \uC18C\uB140"
     subComb1: 
     subComb2: 
     subComb3: 
     subComb4: 
     subComb5: 
-    point: 0
+    point: 10
+  - unitName: "\uC774\uC138\uACC4\uB97C \uC9C0\uBC30\uD55C \uC790, \uC6B0\uC641\uAD73"
+    unitGrade: "\uD788\uB4E0"
+    mainComb: "\uC774\uC138\uB3CC \uC544\uC774\uB124"
+    subComb1: "\uC774\uC138\uB3CC \uC9D5\uBC84\uAC70"
+    subComb2: "\uC774\uC138\uB3CC \uB9B4\uD30C"
+    subComb3: "\uC774\uC138\uB3CC \uC8FC\uB974\uB974"
+    subComb4: "\uC774\uC138\uB3CC \uACE0\uC138\uAD6C"
+    subComb5: "\uC774\uC138\uB3CC \uBE44\uCC64"
+    point: 10

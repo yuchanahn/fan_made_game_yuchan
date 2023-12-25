@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Slot : MonoBehaviour
 {
-    private bool isPrefabPlaced = false; // 프리팹이 배치되었는지 여부
+    public bool isPrefabPlaced = false; // 프리팹이 배치되었는지 여부
+
+    private void Update()
+    {
+        isPrefabPlaced = GetComponentInChildren<Unit>() != null;
+    }
 
     public bool PlacePrefab(GameObject prefab)
     {
@@ -14,7 +19,8 @@ public class Slot : MonoBehaviour
             return false;
         }
 
-        Instantiate(prefab, transform.position, Quaternion.identity);
+        GameObject placedPrefab = Instantiate(prefab, transform.position, Quaternion.identity);
+        placedPrefab.transform.parent = this.transform;
         isPrefabPlaced = true; // 프리팹 배치 상태 업데이트
         return true;
     }

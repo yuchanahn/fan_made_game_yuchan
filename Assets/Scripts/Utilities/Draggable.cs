@@ -92,9 +92,10 @@ public class Draggable : MonoBehaviour
     private void SnapToSlot()
     {
         RaycastHit2D hit = CastRay2D();
-        if (hit.collider != null && hit.collider.CompareTag("Slot"))
+        if (hit.collider != null && hit.collider.CompareTag("Slot") && !hit.collider.GetComponent<Slot>().isPrefabPlaced)
         {
             transform.position = hit.collider.transform.position;
+            transform.parent = hit.collider.transform;
         }
         else
         {
